@@ -34,7 +34,7 @@ WITH yesterday AS (
 
 SELECT 
 	COALESCE(t.user_id, y.user_id) AS user_id,
-	COALESCE(t.browser_type, y.browser_type) AS user_id,
+	COALESCE(t.browser_type, y.browser_type) AS browser_type,
 	CASE
 		WHEN y.device_activity_datelist IS NULL
 			THEN ARRAY[t.device_activity_datelist]
