@@ -17,7 +17,7 @@
 * **Raw logs** normally used by software eng, ugly schemas, quality errors, shorter retention
 * **Fact data** cleaner column names, quality guarentees (uniqueness, not null, etc), longer retention, trusted
   
-[lab sql](https://github.com/memjoh/data-eng-bootcamp/blob/fdf8e0cc246970e9f6550c360ea0f5ce26141a87/week1/lab/lab1_cumulative_table_players.sql)  &nbsp; | &nbsp;  [homework sql](https://github.com/memjoh/data-eng-bootcamp/blob/fdf8e0cc246970e9f6550c360ea0f5ce26141a87/week1/homework/actors.sql)  
+[lab sql](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/lab/lab1_ddl_fct_game_details.sql)  &nbsp; | &nbsp;  [homework sql 1 dedupe](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/homework/game_details_dedupe.sql)   &nbsp; | &nbsp;  [homework sql 2 ddl](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/homework/user_devices_cumulated_ddl.sql)     &nbsp; | &nbsp;  [homework sql 3 ddl](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/homework/hosts_cumulated_ddl.sql)    &nbsp; | &nbsp;  [homework sql 4 ddl](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/homework/hosts_cumulated_ddl.sql)
 
 
 ## Date List Data Structure
@@ -32,7 +32,7 @@
     * 32 | 2023-01-01 | 100000001000000010000000010000
     * where the 1s represent activity for 2023-01-01 - bit_position (zero indexed)
 
-[lab sql setup](https://github.com/memjoh/data-eng-bootcamp/blob/main/week1/lab/lab2_cumulative_table_setup_players.sql)  &nbsp; | &nbsp;  [lab sql scd](https://github.com/memjoh/data-eng-bootcamp/blob/main/week1/lab/lab2_slowly_changing_dimension_players_scd.sql)  &nbsp; | &nbsp;  [lab sql scd incremental update](https://github.com/memjoh/data-eng-bootcamp/blob/main/week1/lab/lab2_slowly_changing_dimension_incremental_update_players_scd.sql)  &nbsp; | &nbsp;  [homework sql scd](https://github.com/memjoh/data-eng-bootcamp/blob/main/week1/homework/actors_history_scd.sql)  &nbsp; | &nbsp;  [homework sql scd incremental update](https://github.com/memjoh/data-eng-bootcamp/blob/fdf8e0cc246970e9f6550c360ea0f5ce26141a87/week1/homework/actors_history_scd_incremental.sql)  
+[lab sql datelist](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/lab/lab2_datalist_datatype_users_cumulated.sql)  &nbsp; | &nbsp;  [homework sql datelist](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/homework/datelist_int.sql) 
 
 
 ## Reducing Shuffle with Reduced Facts
@@ -59,4 +59,4 @@ want to be Parallel - Shuffle is a bottleneck to parallel (all data needs to be 
     * *not a monthly / yearly aggregate*
     * allows for fast correlation analysis between user-level metrics and dimensions; look at every single dimension quickly
 
-[lab sql](https://github.com/memjoh/data-eng-bootcamp/blob/fdf8e0cc246970e9f6550c360ea0f5ce26141a87/week1/lab/lab3_enums_vertices_edges.sql) 
+[lab sql reduced facts array](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/lab/lab3_reduced_facts_array_metrics.sql)   &nbsp; | &nbsp;  [lab sql reduced facts query](https://github.com/memjoh/data-eng-bootcamp/blob/4051111b1a9df7af918aee3e8e5f336ece057825/week2/lab/lab3_reduced_facts_array_metrics_query.sql) 
