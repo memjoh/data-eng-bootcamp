@@ -6,7 +6,7 @@ import random
 import os
 
 API_KEY = os.environ.get('STATSIG_API_KEY')
-statsig.initialize("secret-bOh5fWm1AyAS77iu9eD8nXqvEnJtmThXOKU8Qarfh9a")
+statsig.initialize("INSERT_API_KEY")
 app = Flask(__name__)
 
 # Sample in-memory database
